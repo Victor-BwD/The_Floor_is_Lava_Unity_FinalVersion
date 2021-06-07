@@ -154,7 +154,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d530e725662a234099f49972aaa9a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  groundedPlayer: 0
+  speed: 5
+  jumpHeight: 300
 --- !u!54 &154210483
 Rigidbody:
   m_ObjectHideFlags: 0
