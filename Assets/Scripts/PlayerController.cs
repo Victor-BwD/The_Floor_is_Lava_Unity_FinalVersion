@@ -37,6 +37,11 @@ public class PlayerController : MonoBehaviour
             isGrounded = true;
             Debug.Log("Enter");
         }
+
+        if(other.gameObject.name == "Finish")
+        {
+            Debug.Log("Chegou");
+        }
     }
 
     private void OnTriggerExit(Collider other)
