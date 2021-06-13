@@ -42,6 +42,11 @@ public class PlayerController : MonoBehaviour
         {
             Debug.Log("Chegou");
         }
+
+        if(other.gameObject.name == "Lava")
+        {
+            Destroy(this.gameObject);
+        }
     }
 
     private void OnTriggerExit(Collider other)

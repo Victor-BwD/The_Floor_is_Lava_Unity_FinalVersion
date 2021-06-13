@@ -156,7 +156,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 100
-  jumpHeight: 310
+  jumpHeight: 350
   isGrounded: 0
 --- !u!54 &154210483
 Rigidbody:
@@ -931,7 +931,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1463155733}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.734, y: -8.7, z: 0}
+  m_LocalPosition: {x: 21.8, y: -8.7, z: 0}
   m_LocalScale: {x: 5.1625314, y: -25.77462, z: 10}
   m_Children: []
   m_Father: {fileID: 931460993}
