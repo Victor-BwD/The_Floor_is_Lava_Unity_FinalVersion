@@ -32,7 +32,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.name == "Ground")
+        if(other.gameObject.CompareTag("Ground"))
         {
             isGrounded = true;
             Debug.Log("Enter");
@@ -51,7 +51,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if(other.gameObject.name == "Ground")
+        if(other.gameObject.CompareTag("Ground"))
         {
             isGrounded = false;
             Debug.Log("Exited");
