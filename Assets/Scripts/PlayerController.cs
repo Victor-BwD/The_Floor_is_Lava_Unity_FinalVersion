@@ -69,6 +69,11 @@ public class PlayerController : MonoBehaviour
         {
             transform.position = startPosition;
         }
+
+        if (other.gameObject.CompareTag("GreatAxe"))
+        {
+            transform.position = startPosition;
+        }
     }
 
     private void OnTriggerExit(Collider other)
