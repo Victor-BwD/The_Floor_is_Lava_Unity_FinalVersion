@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     public bool isGrounded;
     private Rigidbody rb;
 
+
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -46,6 +47,14 @@ public class PlayerController : MonoBehaviour
         if(other.gameObject.name == "Lava")
         {
             Destroy(this.gameObject);
+        }
+
+        if (other.gameObject.CompareTag("Mola"))
+        {
+            Debug.Log("Pra cima");
+            rb.AddForce(Vector3.up * 25, ForceMode.Impulse);
+            
+           
         }
     }
 
