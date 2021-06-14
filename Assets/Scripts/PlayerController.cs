@@ -9,6 +9,11 @@ public class PlayerController : MonoBehaviour
     public bool isGrounded;
     private Rigidbody rb;
 
+    public Vector3 startPosition;
+    private void Awake()
+    {
+        startPosition = transform.position;
+    }
 
     private void Start()
     {
@@ -16,6 +21,12 @@ public class PlayerController : MonoBehaviour
     }
 
     void Update()
+    {
+        Move();
+        
+    }
+
+    void Move()
     {
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
@@ -28,7 +39,6 @@ public class PlayerController : MonoBehaviour
                 rb.AddForce(Vector3.up * jumpHeight);
             }
         }
-        
     }
 
     private void OnTriggerEnter(Collider other)
@@ -46,15 +56,18 @@ public class PlayerController : MonoBehaviour
 
         if(other.gameObject.name == "Lava")
         {
-            Destroy(this.gameObject);
+            transform.position = startPosition;
         }
 
         if (other.gameObject.CompareTag("Mola"))
         {
             Debug.Log("Pra cima");
             rb.AddForce(Vector3.up * 25, ForceMode.Impulse);
-            
-           
+        }
+
+        if (other.gameObject.CompareTag("Needle"))
+        {
+            transform.position = startPosition;
         }
     }
 
