@@ -8,6 +8,7 @@ TagManager:
   - Mola
   - Needle
   - GreatAxe
+  - windArea
   layers:
   - Default
   - TransparentFX

@@ -9,6 +9,10 @@ public class PlayerController : MonoBehaviour
     public bool isGrounded;
     private Rigidbody rb;
 
+    public bool inWindZone = false;
+    public GameObject windZone;
+
+
     public Vector3 startPosition;
     private void Awake()
     {
@@ -24,6 +28,14 @@ public class PlayerController : MonoBehaviour
     {
         Move();
         
+    }
+
+    private void FixedUpdate()
+    {
+        if(inWindZone)
+        {
+            rb.AddForce(windZone.GetComponent<WindArea>().direction * windZone.GetComponent<WindArea>().strengh);
+        }
     }
 
     void Move()
@@ -76,6 +88,12 @@ public class PlayerController : MonoBehaviour
         {
             transform.position = startPosition;
         }
+
+        if(other.gameObject.tag == "windArea")
+        {
+            windZone = other.gameObject;
+            inWindZone = true;
+        }
     }
 
     private void OnTriggerExit(Collider other)
@@ -84,6 +102,11 @@ public class PlayerController : MonoBehaviour
         {
             isGrounded = false;
             Debug.Log("Exited");
+        }
+
+        if(other.gameObject.tag == "windArea")
+        {
+            inWindZone = false;
         }
     }
 }
