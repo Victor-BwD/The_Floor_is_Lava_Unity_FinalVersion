@@ -84,16 +84,13 @@ public class PlayerController : MonoBehaviour
             transform.position = startPosition;
         }
 
-        if (other.gameObject.CompareTag("GreatAxe"))
-        {
-            transform.position = startPosition;
-        }
-
         if(other.gameObject.tag == "windArea")
         {
             windZone = other.gameObject;
             inWindZone = true;
         }
+
+
     }
 
     private void OnTriggerExit(Collider other)
