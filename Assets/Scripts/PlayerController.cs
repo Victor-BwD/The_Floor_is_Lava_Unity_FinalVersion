@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float speed;//move speed
-    public float jumpHeight;//jump
-    public bool isGrounded;
+    [SerializeField] private float speed;//move speed
+    [SerializeField] private float jumpHeight;//jump
+    private bool isGrounded;
     private Rigidbody rb;
 
-    public bool inWindZone = false;
+    private bool inWindZone = false;
     public GameObject windZone;//var to get the collision
 
 
