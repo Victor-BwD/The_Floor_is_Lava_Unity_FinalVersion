@@ -112,10 +112,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 881, y: 492}
-  m_MaxSize: {x: 16006, y: 14042}
+  m_MinSize: {x: 880, y: 342}
+  m_MaxSize: {x: 16005, y: 8042}
   vertical: 0
-  controlID: 37
+  controlID: 88
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -137,10 +137,10 @@ MonoBehaviour:
     y: 0
     width: 1481
     height: 947
-  m_MinSize: {x: 605, y: 492}
-  m_MaxSize: {x: 12005, y: 14042}
+  m_MinSize: {x: 605, y: 342}
+  m_MaxSize: {x: 12005, y: 8042}
   vertical: 1
-  controlID: 15
+  controlID: 89
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -166,7 +166,7 @@ MonoBehaviour:
   m_MinSize: {x: 605, y: 221}
   m_MaxSize: {x: 12005, y: 4021}
   vertical: 0
-  controlID: 16
+  controlID: 90
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -256,7 +256,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ProjectBrowser
+  m_Name: ConsoleWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -265,14 +265,14 @@ MonoBehaviour:
     y: 562
     width: 1481
     height: 385
-  m_MinSize: {x: 231, y: 271}
-  m_MaxSize: {x: 10001, y: 10021}
-  m_ActualView: {fileID: 17}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 17}
   - {fileID: 18}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -420,9 +420,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 68fbffff
+      m_SelectedIDs: 78560000
+      m_LastClickedID: 22136
+      m_ExpandedIDs: 3cd1ffff76faffff8cfaffffb8faffff10fbffff5efbffff68fbffff60560000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -482,9 +482,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -266.81232, y: -237.35986, z: -236.68161}
+    m_Target: {x: -114.28053, y: -45.675377, z: 3.6100535}
     speed: 2
-    m_Value: {x: -266.81232, y: -237.35986, z: -236.68161}
+    m_Value: {x: -114.28053, y: -45.675377, z: 3.6100535}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -530,13 +530,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.116208, y: 0.8600423, z: -0.22585414, w: -0.44251242}
+    m_Target: {x: -0.11292403, y: 0.7059289, z: -0.115594596, w: -0.68960327}
     speed: 2
-    m_Value: {x: -0.116207756, y: 0.8600404, z: -0.22585365, w: -0.44251147}
+    m_Value: {x: -0.11395819, y: 0.705754, z: -0.116653234, w: -0.6894324}
   m_Size:
-    m_Target: 297.90497
+    m_Target: 116.32291
     speed: 2
-    m_Value: 297.90497
+    m_Value: 121.80409
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -626,20 +626,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/DungeonTraps/Trap/Prefab
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/DungeonTraps/Trap/Prefab
   m_LastFoldersGridSize: -1
   m_LastProjectPath: E:\Projects\The floor is lava!
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 92350000
-    m_LastClickedID: 13714
-    m_ExpandedIDs: 000000006e3500007035000000ca9a3b
+    m_SelectedIDs: 04360000
+    m_LastClickedID: 13828
+    m_ExpandedIDs: 000000006e350000703500007435000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -692,10 +692,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
+    m_SelectedInstanceIDs: acb6ffff
+    m_LastClickedInstanceID: -18772
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c6230000042c00006e09000000000000
+    m_ExpandedInstanceIDs: c6230000042c00006e0900000000000020360000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

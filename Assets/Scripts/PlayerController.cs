@@ -90,6 +90,20 @@ public class PlayerController : MonoBehaviour
             inWindZone = true;
         }
 
+        if (other.gameObject.CompareTag("Navalha"))
+        {
+
+            transform.position = startPosition;
+        }
+
+        if (other.gameObject.CompareTag("Saw"))
+        {
+
+            transform.position = startPosition;
+        }
+
+
+
 
     }
 
