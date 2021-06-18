@@ -4,16 +4,17 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float speed;
-    public float jumpHeight;
+    public float speed;//move speed
+    public float jumpHeight;//jump
     public bool isGrounded;
     private Rigidbody rb;
 
     public bool inWindZone = false;
-    public GameObject windZone;
+    public GameObject windZone;//var to get the collision
 
 
     public Vector3 startPosition;
+
     private void Awake()
     {
         startPosition = transform.position;
@@ -32,19 +33,20 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if(inWindZone)
+        if(inWindZone)//check if players is on wind zone
         {
-            rb.AddForce(windZone.GetComponent<WindArea>().direction * windZone.GetComponent<WindArea>().strengh);
+            rb.AddForce(windZone.GetComponent<WindArea>().direction * windZone.GetComponent<WindArea>().strengh);//get script WindArea and change the variables there
         }
     }
 
+    //Function to move and jump
     void Move()
     {
-        float moveHorizontal = Input.GetAxis("Horizontal");
-        float moveVertical = Input.GetAxis("Vertical");
-        Vector3 movement = new Vector3(moveVertical, 0.0f, moveHorizontal);
-        rb.AddForce(movement * speed * Time.deltaTime);
-        if (isGrounded)
+        float moveHorizontal = Input.GetAxis("Horizontal");//Get horizontal axis
+        float moveVertical = Input.GetAxis("Vertical");//Get Vertical axis
+        Vector3 movement = new Vector3(moveVertical, 0.0f, moveHorizontal);//Vector3 to move
+        rb.AddForce(movement * speed * Time.deltaTime);//physic to move
+        if (isGrounded)//check if player is on ground
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
@@ -56,7 +58,7 @@ public class PlayerController : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
 
-
+        //collisions between phases
         if(other.gameObject.CompareTag("Ground"))
         {
             isGrounded = true;

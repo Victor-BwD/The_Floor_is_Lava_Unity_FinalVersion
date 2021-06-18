@@ -4,6 +4,6 @@ using UnityEngine;
 
 public class WindArea : MonoBehaviour
 {
-    public float strengh;
-    public Vector3 direction;
+    public float strengh;//wind strengh
+    public Vector3 direction;//wind direction
 }
