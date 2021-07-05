@@ -10,6 +10,9 @@ TagManager:
   - windArea
   - Navalha
   - Saw
+  - Rampa
+  - Mola phase 3
+  - ZeroVel
   layers:
   - Default
   - TransparentFX
